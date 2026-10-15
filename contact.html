@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ & Đặt món | YING DRINK</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="logo" href="index.html"><span class="logo-mark">Y</span><span>YING
+                <b>DRINK</b><small>FRESH EVERY DAY</small></span></a><button class="menu-toggle" aria-label="Mở menu"
+            aria-expanded="false">☰</button>
+        <nav class="nav"><a href="index.html">Trang chủ</a><a href="menu.html">Thực đơn</a><a href="about.html">Về
+                YING</a><a class="active" href="contact.html">Liên hệ</a><a class="nav-cta" href="menu.html">Đặt món
+                <span>↗</span></a></nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+            <h1>Gửi lời chào<br><em>đến YING nhé.</em></h1>
+            <p>Đặt món, góp ý hoặc hỏi chúng mình bất cứ điều gì.</p>
+        </section>
+        <section class="contact-layout section">
+            <div class="contact-details">
+                <p class="eyebrow">SAY HELLO</p>
+                <h2>Chúng mình luôn sẵn sàng.</h2>
+                <p>Điền thông tin bên cạnh để gửi yêu cầu đặt món. Đây là bản demo giao diện; biểu mẫu sẽ hiển thị thông
+                    báo xác nhận trên trình duyệt.</p>
+                <div class="contact-card"><span class="contact-icon">⌖</span>
+                    <div><b>Địa chỉ</b>
+                        <p>Hà Nội, Việt Nam</p>
+                    </div>
+                </div>
+                <div class="contact-card"><span class="contact-icon">↗</span>
+                    <div><b>Điện thoại</b>
+                        <p>0123 456 789</p>
+                    </div>
+                </div>
+                <div class="contact-card"><span class="contact-icon">✉</span>
+                    <div><b>Email</b>
+                        <p>hello@yingdrink.vn</p>
+                    </div>
+                </div>
+                <div class="hours-box"><b>Giờ mở cửa</b>
+                    <div><span>Thứ 2 – Chủ nhật</span><strong>08:00 – 22:00</strong></div>
+                </div>
+            </div>
+            <form id="order-form" class="contact-form">
+                <h2>Đặt món / Liên hệ</h2>
+                <p class="form-intro">Các mục có dấu * là bắt buộc.</p>
+                <div class="form-row"><label>Họ và tên *<input name="name" type="text" placeholder="Tên của bạn"
+                            required minlength="2"></label><label>Số điện thoại *<input name="phone" type="tel"
+                            placeholder="09xx xxx xxx" pattern="[0-9+ ()-]{9,15}" required></label></div>
+                <label>Email<input name="email" type="email" placeholder="you@example.com"></label><label>Bạn muốn đặt
+                    món nào? *<select name="drink" required>
+                        <option value="">-- Chọn món --</option>
+                        <option>Trà đào cam sả</option>
+                        <option>Trà vải hoa nhài</option>
+                        <option>Trà chanh mật ong</option>
+                        <option>Cà phê sữa đá</option>
+                        <option>Bạc xỉu</option>
+                        <option>Matcha latte</option>
+                        <option>Trà sữa truyền thống</option>
+                        <option>Matcha dâu</option>
+                        <option>Khác / cần tư vấn</option>
+                    </select></label>
+                <div class="form-row"><label>Số lượng<input name="quantity" type="number" min="1" max="50" value="1"
+                            required></label><label>Hình thức<select name="method">
+                            <option>Nhận tại quán</option>
+                            <option>Giao hàng</option>
+                            <option>Chỉ liên hệ tư vấn</option>
+                        </select></label></div><label>Địa chỉ nhận hàng (nếu giao)<input name="address" type="text"
+                        placeholder="Số nhà, đường, quận..."></label><label>Lời nhắn<textarea name="message" rows="4"
+                        placeholder="Ghi chú thêm về đơn hàng hoặc góp ý của bạn..."></textarea></label><button
+                    class="btn btn-dark submit-btn" type="submit">Gửi yêu cầu <span>→</span></button>
+                <p id="order-message" class="form-message" aria-live="polite"></p>
+                <p class="privacy-note">Bản demo: thông tin chưa được gửi đến máy chủ hay lưu vào cơ sở dữ liệu.</p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-main"><a class="logo logo-footer" href="index.html"><span
+                    class="logo-mark">Y</span><span>YING <b>DRINK</b><small>FRESH EVERY DAY</small></span></a>
+            <p>Mỗi ngụm ngon, một ngày vui.</p>
+        </div>
+        <div class="footer-links">
+            <div><b>Khám phá</b><a href="index.html">Trang chủ</a><a href="menu.html">Thực đơn</a></div>
+            <div><b>Giờ mở cửa</b><span>Hằng ngày · 08:00–22:00</span></div>
+            <div><b>Liên hệ</b><span>hello@yingdrink.vn</span><span>0123 456 789</span></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 YING DRINK. Bài tập thiết kế website.</span><span>Made with care
+                ✳</span></div>
+    </footer>
+</body>
+
+</html>

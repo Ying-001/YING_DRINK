@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn | YING DRINK</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header"><a class="logo" href="index.html"><span class="logo-mark">Y</span><span>YING
+                <b>DRINK</b><small>FRESH EVERY DAY</small></span></a><button class="menu-toggle" aria-label="Mở menu"
+            aria-expanded="false">☰</button>
+        <nav class="nav"><a href="index.html">Trang chủ</a><a class="active" href="menu.html">Thực đơn</a><a
+                href="about.html">Về YING</a><a href="contact.html">Liên hệ</a><a class="nav-cta"
+                href="contact.html">Đặt món <span>↗</span></a></nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">SOMETHING GOOD IN EVERY CUP</p>
+            <h1>Thực đơn <em>nhà YING.</em></h1>
+            <p>Chọn một hương vị hợp tâm trạng của bạn hôm nay.</p>
+        </section>
+        <section class="section menu-section">
+            <div class="menu-toolbar">
+                <div class="filters" role="group" aria-label="Lọc danh mục"><button class="filter-btn active"
+                        data-filter="all">Tất cả</button><button class="filter-btn" data-filter="tea">Trà trái
+                        cây</button><button class="filter-btn" data-filter="coffee">Cà phê</button><button
+                        class="filter-btn" data-filter="milk">Trà sữa & Matcha</button></div><label
+                    class="search-box"><span>⌕</span><input id="menu-search" type="search"
+                        placeholder="Tìm món yêu thích..." aria-label="Tìm món"></label>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-item" data-category="tea" data-name="trà đào cam sả"><img
+                        src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=85"
+                        alt="Trà đào cam sả">
+                    <div><span class="item-type">TRÀ TRÁI CÂY</span>
+                        <h3>Trà đào cam sả</h3>
+                        <p>Đào ngọt dịu, cam thơm và chút sả thanh mát.</p>
+                        <div class="item-bottom"><b>39.000đ</b><button class="add-order" data-item="Trà đào cam sả"
+                                aria-label="Chọn Trà đào cam sả">+</button></div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="tea" data-name="trà vải hoa nhài"><img
+                        src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=85"
+                        alt="Trà vải hoa nhài">
+                    <div><span class="item-type">TRÀ TRÁI CÂY</span>
+                        <h3>Trà vải hoa nhài</h3>
+                        <p>Hương nhài dịu nhẹ kết hợp vị vải thơm ngọt.</p>
+                        <div class="item-bottom"><b>42.000đ</b><button class="add-order" data-item="Trà vải hoa nhài"
+                                aria-label="Chọn Trà vải hoa nhài">+</button></div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="tea" data-name="trà chanh mật ong"><img
+                        src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=600&q=85"
+                        alt="Trà chanh mật ong">
+                    <div><span class="item-type">TRÀ TRÁI CÂY</span>
+                        <h3>Trà chanh mật ong</h3>
+                        <p>Chua nhẹ, thơm mật ong, giải khát dễ chịu.</p>
+                        <div class="item-bottom"><b>32.000đ</b><button class="add-order" data-item="Trà chanh mật ong"
+                                aria-label="Chọn Trà chanh mật ong">+</button></div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="coffee" data-name="cà phê sữa đá"><img
+                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=85"
+                        alt="Cà phê sữa đá">
+                    <div><span class="item-type">CÀ PHÊ</span>
+                        <h3>Cà phê sữa đá</h3>
+                        <p>Cà phê đậm vị cùng sữa ngọt béo vừa phải.</p>
+                        <div class="item-bottom"><b>29.000đ</b><button class="add-order" data-item="Cà phê sữa đá"
+                                aria-label="Chọn Cà phê sữa đá">+</button></div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="coffee" data-name="bạc xỉu"><img
+                        src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=85"
+                        alt="Bạc xỉu">
+                    <div><span class="item-type">CÀ PHÊ</span>
+                        <h3>Bạc xỉu</h3>
+                        <p>Nhiều sữa, thơm cà phê, ngọt ngào dễ uống.</p>
+                        <div class="item-bottom"><b>32.000đ</b><button class="add-order" data-item="Bạc xỉu"
+                                aria-label="Chọn Bạc xỉu">+</button></div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="milk" data-name="matcha latte"><img
+                        src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=600&q=85"
+                        alt="Matcha latte">
+                    <div><span class="item-type">TRÀ SỮA & MATCHA</span>
+                        <h3>Matcha latte</h3>
+                        <p>Matcha thơm đặc trưng, sữa mềm mịn.</p>
+                        <div class="item-bottom"><b>45.000đ</b><button class="add-order" data-item="Matcha latte"
+                                aria-label="Chọn Matcha latte">+</button></div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="milk" data-name="trà sữa truyền thống"><img
+                        src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=600&q=85"
+                        alt="Trà sữa truyền thống">
+                    <div>
+                        <div><span class="item-type">TRÀ SỮA & MATCHA</span>
+                            <h3>Trà sữa truyền thống</h3>
+                            <p>Vị trà đậm đà, sữa béo nhẹ và trân châu dai.</p>
+                            <div class="item-bottom"><b>35.000đ</b><button class="add-order"
+                                    data-item="Trà sữa truyền thống" aria-label="Chọn Trà sữa truyền thống">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="menu-item" data-category="milk" data-name="matcha dâu"><img
+                        src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=85"
+                        alt="Matcha dâu">
+                    <div><span class="item-type">TRÀ SỮA & MATCHA</span>
+                        <h3>Matcha dâu</h3>
+                        <p>Matcha thanh nhẹ kết hợp dâu chua ngọt.</p>
+                        <div class="item-bottom"><b>49.000đ</b><button class="add-order" data-item="Matcha dâu"
+                                aria-label="Chọn Matcha dâu">+</button></div>
+                    </div>
+                </article>
+            </div>
+            <p id="empty-results" class="empty-results" hidden>Không tìm thấy món phù hợp. Bạn thử từ khóa khác nhé.</p>
+            <div class="order-notice" id="order-notice" aria-live="polite">Chọn dấu + cạnh món uống để thêm món vào yêu
+                cầu đặt hàng.</div>
+            <div class="menu-cta">
+                <div>
+                    <h2>Đã chọn được món chưa?</h2>
+                    <p>Gửi yêu cầu đặt món, YING sẽ liên hệ xác nhận với bạn.</p>
+                </div><a class="btn btn-dark" href="contact.html">Đặt món ngay <span>→</span></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-main"><a class="logo logo-footer" href="index.html"><span
+                    class="logo-mark">Y</span><span>YING <b>DRINK</b><small>FRESH EVERY DAY</small></span></a>
+            <p>Mỗi ngụm ngon, một ngày vui.</p>
+        </div>
+        <div class="footer-links">
+            <div><b>Khám phá</b><a href="index.html">Trang chủ</a><a href="about.html">Về chúng tôi</a></div>
+            <div><b>Giờ mở cửa</b><span>Hằng ngày · 08:00–22:00</span></div>
+            <div><b>Liên hệ</b><span>hello@yingdrink.vn</span><span>0123 456 789</span></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 YING DRINK. Bài tập thiết kế website.</span><span>Made with care
+                ✳</span></div>
+    </footer>
+</body>
+
+</html>
